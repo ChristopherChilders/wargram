@@ -1,0 +1,26 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  html, body {
+    height: 100%;
+    width: 100%;
+  }
+
+  .picture-frame {
+    width: 50px;
+  }
+
+  .picture-frame img {
+    width: 100%;
+  }
+
+  .picture-playground {
+    border: 5px solid gold;
+    display: flex;
+    flex-direction: row;
+  }
