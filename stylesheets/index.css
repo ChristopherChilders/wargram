@@ -12,7 +12,13 @@ html {
   }
 
   .picture-frame {
-    width: 50px;
+    width: 80%;
+    border: 5px solid purple;
+
+    /*centers the frames*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .picture-frame img {
@@ -22,5 +28,20 @@ html {
   .picture-playground {
     border: 5px solid gold;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+
+    /*how to line up on cross-axis*/
+    align-items: center;
+
+    /*how to line up on main-axis*/
+    justify-content: flex-start;
+
+    /*wraps the images within the playground*/
+    /* flex-wrap: wrap; */
+
+    /* if you set the height, 
+    thats how big the element will be.
+    Then the pictures will overflow*/
+    min-height: 300px;
   }
+
